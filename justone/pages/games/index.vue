@@ -18,6 +18,13 @@ definePageMeta({
 // fetch the products
 const  { data: products } = await useFetch('https://fakestoreapi.com/products');
 
+useHead({
+    title: 'OneGames | Play',
+    meta: [
+        {name: 'description', content: 'OneGames library of games'}
+    ]
+})
+
 </script>
 
 <style lang="scss" scoped>
