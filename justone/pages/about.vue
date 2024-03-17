@@ -8,10 +8,7 @@
 </template>
 
 <script setup>
-const { data } = await useFetch('/api/gamer?name=mario', {
-    method: 'post',
-    body: { age: 30 }
-})
+const { data } = await useFetch('/api/currency/GBP')
 
 </script>
 
