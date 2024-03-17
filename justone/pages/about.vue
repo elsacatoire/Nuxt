@@ -3,11 +3,15 @@
         <h2>About</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima rerum quod nam porro nisi vero facere incidunt dolorum facilis eos.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima rerum quod nam porro nisi vero facere incidunt dolorum facilis eos.</p>
-
+        <div>{{  data  }}</div>
     </div>
 </template>
 
 <script setup>
+const { data } = await useFetch('/api/gamer?name=mario', {
+    method: 'post',
+    body: { age: 30 }
+})
 
 </script>
 
