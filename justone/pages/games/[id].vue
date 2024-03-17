@@ -1,4 +1,8 @@
 <template>
+    <Head v-if="product">
+        <Title>OneGames | {{ product.title }}</Title>
+        <Meta name="description" :content="product.description" />
+    </Head>
     <div v-if="product">
         <ProductDetails :product="product" />
     </div>
